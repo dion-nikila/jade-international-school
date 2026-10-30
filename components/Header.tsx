@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Image from "@/components/SchoolImage";
 import Link from "next/link";
 import {useEffect, useRef, useState} from "react";
 import {usePathname} from "next/navigation";

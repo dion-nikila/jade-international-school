@@ -1,3 +1,4 @@
+import {assetPath} from '@/lib/assets';
 import type {Metadata} from 'next';
 import Link from 'next/link';
 import {home} from '@/content/home';
@@ -6,7 +7,7 @@ import {photos} from '@/content/school';
 import {Hero,ProgrammeExplorer,PhotoGallery,CampusExplorer} from '@/components/Explore';
 import {TeachingSection,TourBanner,Stories,Picture,FAQ} from '@/components/Sections';
 import {VerifiedFacts} from '@/components/SchoolContent';
-export const metadata:Metadata={title:{absolute:home.meta.title},description:home.meta.description,openGraph:{title:home.meta.title,description:home.meta.description,images:[home.hero.image.src]}};
+export const metadata:Metadata={title:{absolute:home.meta.title},description:home.meta.description,openGraph:{title:home.meta.title,description:home.meta.description,images:[new URL(assetPath(home.hero.image.src),site.url).href]}};
 export default function Home(){return <main id="main">
  <Hero/>
  <section className="school-information purple" aria-label="School information"><div className="page-width"><VerifiedFacts facts={home.information.facts} className="information-facts"/></div></section>

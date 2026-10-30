@@ -2,6 +2,8 @@
 
 A separate, multi-page school prototype built with the school's original crest, sampled purple and green, and genuine Jade photography.
 
+Live website: https://dion-nikila.github.io/jade-international-school/
+
 Public source: https://github.com/dion-nikila/jade-international-school
 
 ## Run
@@ -59,6 +61,6 @@ See `docs/revision/EXPANDED_REVIEW.md` for final build, responsive and interacti
 
 Next.js App Router, TypeScript, Tailwind, next/image, next/font and GSAP. No new application dependency was added. Lenis remains installed but is not loaded by the UI.
 
-The prototype is noindex with disallow-all robots. Import this repository into Vercel using its Next.js preset and set `NEXT_PUBLIC_SITE_URL` when a deployment domain is chosen. Production publication, school approval and media permissions remain launch work.
+The public prototype is hosted on GitHub Pages and remains noindex. `npm run build:pages` exports all routes into `out/`, with the repository base path and static images configured at build time. The generated website is published from the `gh-pages` branch, while `main` contains source code. Add `.nojekyll` to the deployment root so GitHub serves the `_next` files. Source updates require rebuilding and publishing the deployment branch. `npm run build` continues to produce the usual local Next.js server build. School approval and media permissions remain launch work.
 
-The unused `/api/enquiry` validation stub returns `preview: true, delivered: false`. It does not store or send data and is not connected to a public form. The visit planner uses the school's published WhatsApp contact instead.
+The unused enquiry API stub is preserved in `archive/enquiry-route.ts` outside the active app because GitHub Pages has no server endpoint. It is not connected to a public form. The tour planner continues to prepare a message using the school’s published WhatsApp contact.

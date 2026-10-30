@@ -1,3 +1,5 @@
+import {assetPath} from '@/lib/assets';
+import {site} from '@/content/site';
 import type {Metadata} from 'next';
 import Link from 'next/link';
 import {notFound} from 'next/navigation';
@@ -7,7 +9,7 @@ import {VerifiedFacts} from '@/components/SchoolContent';
 import {PageIntro,Picture,TourBanner,FAQ} from '@/components/Sections';
 export const dynamicParams=false;
 export function generateStaticParams(){return pathways.map(p=>({pathway:p.slug}));}
-export async function generateMetadata({params}:{params:Promise<{pathway:string}>}):Promise<Metadata>{const {pathway}=await params;const p=pathways.find(p=>p.slug===pathway);return p?{title:p.title,description:p.description,openGraph:{title:p.title,description:p.description,images:[p.image.src]}}:{};}
+export async function generateMetadata({params}:{params:Promise<{pathway:string}>}):Promise<Metadata>{const {pathway}=await params;const p=pathways.find(p=>p.slug===pathway);return p?{title:p.title,description:p.description,openGraph:{title:p.title,description:p.description,images:[new URL(assetPath(p.image.src),site.url).href]}}:{};}
 export default async function Pathway({params}:{params:Promise<{pathway:string}>}){
  const {pathway}=await params;const p=pathways.find(p=>p.slug===pathway);if(!p)notFound();
  const early=pathway==='starting-school';const fast=pathway==='fast-track-a-levels';

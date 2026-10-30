@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from '@/components/SchoolImage';
 import Link from 'next/link';
 import {photos,stories,faqs} from '@/content/school';
 import type {Media} from '@/content/types';

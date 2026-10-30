@@ -1,0 +1,92 @@
+[
+  {
+    "path": "",
+    "status": "200",
+    "ok": true
+  },
+  {
+    "path": "about/",
+    "status": "200",
+    "ok": true
+  },
+  {
+    "path": "academics/",
+    "status": "200",
+    "ok": true
+  },
+  {
+    "path": "starting-school/",
+    "status": "200",
+    "ok": true
+  },
+  {
+    "path": "igcse-and-a-levels/",
+    "status": "200",
+    "ok": true
+  },
+  {
+    "path": "fast-track-a-levels/",
+    "status": "200",
+    "ok": true
+  },
+  {
+    "path": "foundation/",
+    "status": "200",
+    "ok": true
+  },
+  {
+    "path": "school-life/",
+    "status": "200",
+    "ok": true
+  },
+  {
+    "path": "admissions/",
+    "status": "200",
+    "ok": true
+  },
+  {
+    "path": "news/",
+    "status": "200",
+    "ok": true
+  },
+  {
+    "path": "news/graduation-2025/",
+    "status": "200",
+    "ok": true
+  },
+  {
+    "path": "news/learning-around-the-table/",
+    "status": "200",
+    "ok": true
+  },
+  {
+    "path": "news/sport-at-jade/",
+    "status": "200",
+    "ok": true
+  },
+  {
+    "path": "news/university-career-fair/",
+    "status": "200",
+    "ok": true
+  },
+  {
+    "path": "contact/",
+    "status": "200",
+    "ok": true
+  },
+  {
+    "path": "visit/",
+    "status": "200",
+    "ok": true
+  },
+  {
+    "path": "brand/jade-international-school-logo.png",
+    "status": "200",
+    "ok": true
+  },
+  {
+    "path": "media/jade-glass-classroom.jpg",
+    "status": "200",
+    "ok": true
+  }
+]
