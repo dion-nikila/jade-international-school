@@ -1,21 +1,21 @@
-# Active photography and logo
+# School photography and logo
 
-All active images are real Jade archive photographs. There is no stock campus image or generated student photograph. School approval for final production use and pupil consent should be confirmed before launch.
+All active photographs come from Jade's public school or preschool pages. No stock campus, generated pupil, artificial recolouring or invented facility is used. Confirm school permission and pupil consent for production publication.
 
-| File | Source and observed content | Original size | Use |
-| --- | --- | --- | --- |
-| public/brand/jade-international-school-logo.png | Original crest PNG from Jade's official Home page | 800 × 800 | Complete unchanged source image in header and favicon |
-| public/media/jade-glass-classroom.jpg | Official Home carousel: teacher and students beside a glass writing wall and round table | 1024 × 768 | Home hero and Fast Track pathway |
-| public/media/jade-round-table.jpg | Official Home carousel: shared notes spread across a round table | 960 × 720 | IGCSE/A Level pathway |
-| public/media/jade-classroom-tables.jpg | Official Home carousel: glass-walled room with circular tables | 2016 × 1512 | Visit page |
-| public/media/jade-preschool-painting.jpg | Jade Preschool official archive: a child painting | 1080 × 963 | Starting-school entry and pathway |
+The full original crest remains unchanged at `public/brand/jade-international-school-logo.png`. Its source and SHA-256 are recorded separately in `public/brand/SOURCE.json`.
 
-Full image URLs and hashes are in docs/revision/MEDIA_SOURCES.json. The official logo's separate source record is in public/brand/SOURCE.json. The logo has not been recoloured, cropped, redrawn or recompressed.
+## Sources
 
-Photographs are cropped through CSS object-fit and served responsively by Next/Image. No filter, blend mode or opacity is applied to photographs. Only the Home hero has a black bottom gradient to support white text. The other photos have no overlay. Captions identify visible activities without invented year groups.
+- `docs/revision/MEDIA_SOURCES.json`: original classroom and preschool photographs with exact source URLs and hashes.
+- `docs/revision/EXPANDED_MEDIA_SOURCES.json`: science, computer room, sport, classroom detail and event photographs with source pages and hashes.
+- `docs/revision/GALLERY_ORIGINAL_URLS.json`: original public gallery image URLs and event group context captured during research. Signed image URLs may expire.
 
-The 1024px hero is an authentic archive image and is visibly softer on large screens. An approved replacement shoot of the same workshop setup would improve final production quality. Suggested replacement: landscape 2400 × 1600, natural colour, full circular table and glass wall visible, keep people above the caption/text area, WebP or JPEG. Do not generate or substitute an imaginary campus.
+Official pages consulted: https://www.jadeeducation.org/home, https://www.jadeeducation.org/gallery, https://www.jadeeducation.org/sports and https://jadepreschool.com/.
 
-No video is loaded. The earlier *-placeholder.webp files remain unused archive assets for the deferred Step 4 work; no current route displays them.
+## Treatment
 
-Active typography uses local DM Sans 400 and 600, with its Open Font License in public/fonts/.
+Next/Image serves responsive crops. Photography retains natural colour with no colour filter, blend mode or reduced image opacity. The full-bleed hero and campus explorer have black bottom gradients for white text. The modal displays images without cropping. Event photographs retain any captions already embedded in their originals. Supplied photographs vary in resolution; the authentic 1024px classroom hero is softer on large displays than a new 2400px school shoot would be.
+
+The complete logo is displayed inside a white panel against the purple masthead. It is not redrawn, recoloured, cropped or recompressed. The duplicated textual school name is ordinary navigation text, not a replacement logo.
+
+Legacy `*-placeholder.webp` assets are unused. No video or external media iframe is loaded. Local DM Sans 400 and 600 files have their Open Font License in `public/fonts/`.

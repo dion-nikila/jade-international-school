@@ -1,19 +1,19 @@
 # Jade International School
 
-Revision review: **Steps 1–3 complete. Step 4 is pending review.**
+A separate, multi-page school prototype built with the school's original crest, sampled purple and green, and genuine Jade photography.
 
-This is the separate school project, with Jade's actual logo and sampled brand colours, real classroom photography, the revised Home opening and working parent pathway pages.
+Public source: https://github.com/dion-nikila/jade-international-school
 
 ## Run
 
-Use Node 24 (also recorded in .nvmrc).
+Use Node 24, recorded in `.nvmrc`.
 
 ```sh
 npm ci
 npm run dev
 ```
 
-Open http://localhost:3005.
+Preview: http://localhost:3005
 
 ```sh
 npm run lint
@@ -22,49 +22,43 @@ npm run build
 npm start
 ```
 
-## Review pages
+## Pages
 
-- / — classroom-led hero, verified facts strip and Start here.
-- /starting-school — preschool and primary enquiries.
-- /igcse-and-a-levels — examination pathways.
-- /fast-track-a-levels — the published one-year programme.
-- /visit — verified phone, WhatsApp and email routes to arrange a visit.
+- `/`: photographic hero, school facts, three-route Start here explorer, classroom feature, school life, campus explorer, filterable gallery, student voice, school stories, admissions and FAQs.
+- `/about`: classroom approach, teaching and school life.
+- `/academics`: programme directory and route comparison.
+- `/starting-school`: preschool and primary.
+- `/igcse-and-a-levels`: Cambridge and Edexcel pathways.
+- `/fast-track-a-levels`: the one-year A Level programme.
+- `/foundation`: NCC International Foundation Diploma.
+- `/school-life`: sports, arts and the complete interactive photo gallery.
+- `/admissions`: entry routes, visit preparation and FAQs.
+- `/news`: four school stories, each with an individual page.
+- `/contact`: published school contacts and map link.
+- `/visit`: tour enquiry preparation and direct contact options.
 
-The Home entry points have real internal destinations. A tour is arranged and confirmed directly with the school, never falsely confirmed by the prototype.
+## Interactions
 
-## Official branding
+Programme tabs support arrow keys, Home and End. Campus photographs switch on selection. Gallery filters, an accessible native modal, previous/next buttons, arrow keys and Escape support photo exploration. The mobile menu contains focus and restores it on dismissal. Native FAQ disclosures work without JavaScript.
 
-The complete source PNG is unchanged in public/brand/jade-international-school-logo.png. Its provenance and SHA-256 are in public/brand/SOURCE.json.
+The tour planner prepares a WhatsApp message from a programme, time preference and optional questions. The parent reviews and sends it in WhatsApp. It never claims a tour is confirmed. No personal information is collected or stored by the planner.
 
-The sampled green is #29B14D, purple #431448 and shield grey #E8E8EA. White, black and a documented purple/white neutral complete the six-colour plan. These are measurements from the logo, not a claimed official brand manual.
+Motion consists of a scoped GSAP opening event and responses to visitor actions. No repetitive scroll reveals, scroll hijacking or autoplay carousel. Reduced-motion preferences disable transitions and animation. DM Sans is self-hosted through next/font/local.
 
-- content/brand.md: pixel sampling and sources.
-- app/brand.css: design tokens.
-- docs/revision/DESIGN_PLAN.md: plan, wireframes and self-critique written before Step 3.
-- docs/revision/REVIEW.md: screenshot critique and validation.
-- docs/revision/MEDIA_SOURCES.json: exact photo sources.
-- docs/revision/qa/: 390px and 1440px captures after each step and for each implemented page.
+## Branding and sources
 
-The invented monogram, geometric favicon, warm palette, serif display treatment, link arrows, numbered cards, scrolling reveals, colour washes and pinning are removed from the active site. DM Sans is self-hosted using next/font/local. The only animation is a scoped GSAP page-load event for the complete headline group, disabled under reduced motion.
+The original 800 × 800 logo is unchanged. Source and SHA-256: `public/brand/SOURCE.json`. Colour sampling: `content/brand.md`. The six-colour system uses crest purple #431448, leaf green #29B14D, shield grey, white, black and a purple-tinted neutral. Green buttons use black text for contrast.
 
-## Facts and publication
+Shared programme, photography, FAQ and story content is in `content/school.ts`. Individual pathway facts and sources remain in their content files. Unknown fees, future open-day dates, current subject availability, intake dates and accreditation year are not asserted as verified facts. The preschool's public pages show different addresses, so visitors are asked to confirm their section's visit location.
 
-All live copy is in typed content files, one per page, with shared identity in content/site.ts. Unknown facts use verify:true and do not render. No TODO or missing-data box appears on the pages. The next open day, entry ages, admission requirements, fees, accreditation year and statistics remain unpublished until verified.
+See `MEDIA_README.md`, `docs/revision/EXPANDED_MEDIA_SOURCES.json` and `docs/revision/MEDIA_SOURCES.json` for image provenance. Archived school events are labelled as past events. No fictional students, staff, statistics, testimonials or campus photographs were generated.
 
-The preschool's Home and Admission pages show different addresses. The location is therefore withheld from the preschool pathway and parents are asked to confirm it with admissions.
+## Validation and publication
 
-The rest of Home is intentionally not in this Step 3 review. Its flags are in content/home.ts. The original draft is retained as unpublished archive-home.ts, imported by no route, with publication disabled and verification required.
+See `docs/revision/EXPANDED_REVIEW.md` for final build, responsive and interaction checks. Earlier Step 1–3 captures are retained as history, not the current design.
 
-## Stack and deployment
+Next.js App Router, TypeScript, Tailwind, next/image, next/font and GSAP. No new application dependency was added. Lenis remains installed but is not loaded by the UI.
 
-Next.js App Router, TypeScript, Tailwind, next/image, next/font and GSAP. Existing Lenis and ScrollTrigger packages remain available for later work but are not loaded by the revised UI. No application dependency was added.
+The prototype is noindex with disallow-all robots. Import this repository into Vercel using its Next.js preset and set `NEXT_PUBLIC_SITE_URL` when a deployment domain is chosen. Production publication, school approval and media permissions remain launch work.
 
-For Vercel, import the repository with the Next.js framework preset and set NEXT_PUBLIC_SITE_URL to the approved preview domain. No key is required. The review remains noindex with disallow-all robots until approved for launch. Final school approval and final deployment are still pending.
-
-## Enquiry handler
-
-The existing POST /api/enquiry validation stub is retained for later admissions work. It returns preview:true and delivered:false and never stores or sends enquiries. It is not presented as a live submission form in this review. The visit page uses the school's published contact details instead.
-
-## Media
-
-All active photographs come from the school or preschool's own public pages. They are neither AI-generated nor colour-tinted. Captions describe visible activities without guessing grades, names or event dates. Approval for final production use and pupil consent still needs to be confirmed. See MEDIA_README.md.
+The unused `/api/enquiry` validation stub returns `preview: true, delivered: false`. It does not store or send data and is not connected to a public form. The visit planner uses the school's published WhatsApp contact instead.

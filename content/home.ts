@@ -9,7 +9,7 @@ const facts: Fact[] = [
 
 export const home: OpeningContent = {
   meta: {title: "Jade International School | Colombo", description: "Workshop-style learning at Jade International School in Colombo. Explore preschool and primary, Cambridge and Edexcel IGCSE and A Levels, and Fast Track A Levels."},
-  sections: {hero: true, information: true, startHere: true, restOfHome: false},
+  sections: {hero: true, information: true, startHere: true, restOfHome: true},
   hero: {
     title: "Workshop-style learning at Jade.",
     description: "Jade uses circular tables and glass-walled classrooms for workshop-style lessons in Colombo.",
@@ -37,12 +37,10 @@ export const home: OpeningContent = {
   },
 };
 
-export const pendingHomeSections = {
-  teachingApproach: {enabled: false, verify: true},
-  studentLife: {enabled: false, verify: true},
-  statistics: {enabled: false, verify: true},
-  outcomes: {enabled: false, verify: true},
-  news: {enabled: false, verify: true},
-  enquiries: {enabled: false, verify: true},
+export const unpublishedFacts = {
+  nextOpenDay: {value: null, verify: true},
+  currentFees: {value: null, verify: true},
+  currentIntake: {value: null, verify: true},
+  currentSubjectAvailability: {value: null, verify: true},
   cambridgeApprovalYear: {value: "2025", verify: true},
 } as const;

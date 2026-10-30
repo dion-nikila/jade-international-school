@@ -1,0 +1,62 @@
+[
+  {
+    "file": "/media/jade-science-lab.jpg",
+    "sourcePage": "https://www.jadeeducation.org/home",
+    "sha256": "79b5628cbda7e28638504af8f14d49701b3e7140886f6f7b2c94137bcdf5978e"
+  },
+  {
+    "file": "/media/jade-computer-lab.jpg",
+    "sourcePage": "https://www.jadeeducation.org/home",
+    "sha256": "3e0b6e4575253611897ec179e82bbed7730b750f19a4d90b2972d01ef16e138d"
+  },
+  {
+    "file": "/media/jade-futsal.jpg",
+    "sourcePage": "https://www.jadeeducation.org/sports",
+    "sha256": "3fb3e9df85e9a76c990a2b8b075458a0e2356f2614905b97c3aebdc23294560f"
+  },
+  {
+    "file": "/media/jade-basketball.jpg",
+    "sourcePage": "https://www.jadeeducation.org/sports",
+    "sha256": "162cbb1b9b374e430a48cdff52830f0c8646a492173647fe064883c283ef7d23"
+  },
+  {
+    "file": "/media/jade-group-work.jpg",
+    "sourcePage": "https://www.jadeeducation.org/home",
+    "sha256": "8bd1ead35de62263f22020fb9af0090d46729c0ccccfa773d723436fe55d0ab6"
+  },
+  {
+    "file": "/media/jade-glass-board.jpg",
+    "sourcePage": "https://www.jadeeducation.org/home",
+    "sha256": "d6df9624f9456b5d48e049821c3145f3cb92a07953e0eb341e8ba1663c215031"
+  },
+  {
+    "file": "/media/jade-graduation-2025.jpg",
+    "sourcePage": "https://www.jadeeducation.org/gallery",
+    "sha256": "752f1d2a2cea7299359d91e81c8da3ab17f7105754cce20e8dbc9874177b1937"
+  },
+  {
+    "file": "/media/jade-career-fair.jpg",
+    "sourcePage": "https://www.jadeeducation.org/gallery",
+    "sha256": "e894d1341bd6968af00aa59b172bcb5b2b630b270ea5d63576415ee3b77ea15f"
+  },
+  {
+    "file": "/media/jade-drama.jpg",
+    "sourcePage": "https://www.jadeeducation.org/gallery",
+    "sha256": "e9022084fb10ce8ad3864fed691aa3911f6c0e71f57fcdb3b25d959e5eaa2f25"
+  },
+  {
+    "file": "/media/jade-night-2025.jpg",
+    "sourcePage": "https://www.jadeeducation.org/gallery",
+    "sha256": "bca0fd8764786e36a0ede8bfe59e21a09e8ab6eee35d859f3c7f8b96b028e845"
+  },
+  {
+    "file": "/media/jade-cooking.jpg",
+    "sourcePage": "https://www.jadeeducation.org/gallery",
+    "sha256": "2f19cf8f2a3c75835a325b85a66ee9bee79780a1a7dedcbb35e06b8b8799b579"
+  },
+  {
+    "file": "/media/jade-independence.jpg",
+    "sourcePage": "https://www.jadeeducation.org/gallery",
+    "sha256": "543c94d53d21242feb708c6efc9fc3953888c7d1380b962c1b252c087199e725"
+  }
+]

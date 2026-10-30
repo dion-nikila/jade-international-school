@@ -1,9 +1,6 @@
-import type {Metadata} from "next";
-import Link from "next/link";
-import {site} from "@/content/site";
-import {visit} from "@/content/visit";
-import {SchoolPhoto} from "@/components/SchoolContent";
-export const metadata:Metadata={title:visit.title,description:visit.description};
-export default function VisitPage(){
-  return <main id="main" className="pathway-page page-width"><Link href={site.back.href} className="back-link">{site.back.label}</Link><div className="pathway-heading" data-opening-copy><h1>{visit.title}</h1><p>{visit.description}</p></div><div className="visit-grid"><div><section className="visit-contact"><h2>{visit.contactTitle}</h2><p>{visit.contactBody}</p><div className="visit-links"><a href={site.telephoneHref}>{site.telephone}</a><a className="primary-button" href={site.whatsapp}>{visit.whatsappLabel}</a><a href={site.emailHref}>{site.email}</a></div></section><section className="visit-contact visit-follow-up"><h2>{visit.addressTitle}</h2><address>{site.address}</address><p>{visit.addressNote}</p></section><section className="visit-follow-up"><h2>{visit.questionsTitle}</h2><p>{visit.questionsBody}</p></section></div><SchoolPhoto media={visit.photo} className="pathway-photo" preload/></div></main>;
-}
+import type {Metadata} from 'next';
+import {photos} from '@/content/school';
+import {PageIntro,FAQ} from '@/components/Sections';
+import {VisitPlanner} from '@/components/Explore';
+export const metadata:Metadata={title:'Book a tour',description:'Prepare a school tour enquiry for Jade International School. Choose your programme and questions, then contact the school directly.'};
+export default function Visit(){return <main id="main"><PageIntro title="See Jade for yourself." body="Visit the classrooms and talk through the programme you are considering. Prepare your enquiry below, then arrange a time directly with the school." image={photos.tables}/><section className="section page-width"><div className="section-heading"><h2>Plan your school visit.</h2><p>Choose a programme and the questions you would like to discuss.</p></div><VisitPlanner/></section><section className="section tinted-section"><div className="page-width contact-grid"><div><h2>Prefer to get in touch directly?</h2><div className="visit-links"><a className="plain-link" href="tel:+94773954321">+94 77 395 4321</a><a className="plain-link" href="mailto:info@jadeeducation.org">info@jadeeducation.org</a></div></div><div><h2>Before you set off.</h2><p style={{marginTop:22}}>The school’s published address is 321 Galle Road, Colombo 04. Confirm the section and visit location when booking, especially for preschool.</p><p style={{marginTop:18}}>Your preferred time is a request. Jade will confirm a date directly with you.</p></div></div></section><section className="section page-width faq-section"><h2>Useful to know.</h2><FAQ short/></section></main>;}

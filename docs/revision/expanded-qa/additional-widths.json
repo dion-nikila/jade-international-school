@@ -1,0 +1,290 @@
+[
+  {
+    "route": "/",
+    "h1": 1,
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "route": "/about",
+    "h1": 1,
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "route": "/academics",
+    "h1": 1,
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "route": "/starting-school",
+    "h1": 1,
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "route": "/igcse-and-a-levels",
+    "h1": 1,
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "route": "/fast-track-a-levels",
+    "h1": 1,
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "route": "/foundation",
+    "h1": 1,
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "route": "/school-life",
+    "h1": 1,
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "route": "/admissions",
+    "h1": 1,
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "route": "/news",
+    "h1": 1,
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "route": "/news/graduation-2025",
+    "h1": 1,
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "route": "/news/learning-around-the-table",
+    "h1": 1,
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "route": "/news/sport-at-jade",
+    "h1": 1,
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "route": "/news/university-career-fair",
+    "h1": 1,
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "route": "/contact",
+    "h1": 1,
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "route": "/visit",
+    "h1": 1,
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "route": "/",
+    "h1": 1,
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "/about",
+    "h1": 1,
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "/academics",
+    "h1": 1,
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "/starting-school",
+    "h1": 1,
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "/igcse-and-a-levels",
+    "h1": 1,
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "/fast-track-a-levels",
+    "h1": 1,
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "/foundation",
+    "h1": 1,
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "/school-life",
+    "h1": 1,
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "/admissions",
+    "h1": 1,
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "/news",
+    "h1": 1,
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "/news/graduation-2025",
+    "h1": 1,
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "/news/learning-around-the-table",
+    "h1": 1,
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "/news/sport-at-jade",
+    "h1": 1,
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "/news/university-career-fair",
+    "h1": 1,
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "/contact",
+    "h1": 1,
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "/visit",
+    "h1": 1,
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "route": "/",
+    "h1": 1,
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "/about",
+    "h1": 1,
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "/academics",
+    "h1": 1,
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "/starting-school",
+    "h1": 1,
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "/igcse-and-a-levels",
+    "h1": 1,
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "/fast-track-a-levels",
+    "h1": 1,
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "/foundation",
+    "h1": 1,
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "/school-life",
+    "h1": 1,
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "/admissions",
+    "h1": 1,
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "/news",
+    "h1": 1,
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "/news/graduation-2025",
+    "h1": 1,
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "/news/learning-around-the-table",
+    "h1": 1,
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "/news/sport-at-jade",
+    "h1": 1,
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "/news/university-career-fair",
+    "h1": 1,
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "/contact",
+    "h1": 1,
+    "scrollWidth": 1024,
+    "width": 1024
+  },
+  {
+    "route": "/visit",
+    "h1": 1,
+    "scrollWidth": 1024,
+    "width": 1024
+  }
+]

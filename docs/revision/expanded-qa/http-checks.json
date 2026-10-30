@@ -1,0 +1,98 @@
+[
+  {
+    "route": "/",
+    "status": 200,
+    "noindex": true,
+    "bytes": 73396
+  },
+  {
+    "route": "/about",
+    "status": 200,
+    "noindex": true,
+    "bytes": 32055
+  },
+  {
+    "route": "/academics",
+    "status": 200,
+    "noindex": true,
+    "bytes": 40567
+  },
+  {
+    "route": "/starting-school",
+    "status": 200,
+    "noindex": true,
+    "bytes": 36684
+  },
+  {
+    "route": "/igcse-and-a-levels",
+    "status": 200,
+    "noindex": true,
+    "bytes": 37298
+  },
+  {
+    "route": "/fast-track-a-levels",
+    "status": 200,
+    "noindex": true,
+    "bytes": 36513
+  },
+  {
+    "route": "/foundation",
+    "status": 200,
+    "noindex": true,
+    "bytes": 27616
+  },
+  {
+    "route": "/school-life",
+    "status": 200,
+    "noindex": true,
+    "bytes": 46528
+  },
+  {
+    "route": "/admissions",
+    "status": 200,
+    "noindex": true,
+    "bytes": 28590
+  },
+  {
+    "route": "/news",
+    "status": 200,
+    "noindex": true,
+    "bytes": 29524
+  },
+  {
+    "route": "/news/graduation-2025",
+    "status": 200,
+    "noindex": true,
+    "bytes": 21059
+  },
+  {
+    "route": "/news/learning-around-the-table",
+    "status": 200,
+    "noindex": true,
+    "bytes": 21332
+  },
+  {
+    "route": "/news/sport-at-jade",
+    "status": 200,
+    "noindex": true,
+    "bytes": 21107
+  },
+  {
+    "route": "/news/university-career-fair",
+    "status": 200,
+    "noindex": true,
+    "bytes": 21168
+  },
+  {
+    "route": "/contact",
+    "status": 200,
+    "noindex": true,
+    "bytes": 21414
+  },
+  {
+    "route": "/visit",
+    "status": 200,
+    "noindex": true,
+    "bytes": 23517
+  }
+]

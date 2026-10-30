@@ -1,0 +1,334 @@
+[
+  {
+    "route": "/",
+    "brokenImages": [],
+    "forbidden": [],
+    "h1": 1,
+    "height": 9196,
+    "overflow": [],
+    "scrollWidth": 1440,
+    "title": "Jade International School | Colombo",
+    "width": 1440
+  },
+  {
+    "route": "/about",
+    "brokenImages": [],
+    "forbidden": [],
+    "h1": 1,
+    "height": 5140,
+    "overflow": [],
+    "scrollWidth": 1440,
+    "title": "About Jade | Jade International School",
+    "width": 1440
+  },
+  {
+    "route": "/academics",
+    "brokenImages": [],
+    "forbidden": [],
+    "h1": 1,
+    "height": 5779,
+    "overflow": [],
+    "scrollWidth": 1440,
+    "title": "Learning and programmes | Jade International School",
+    "width": 1440
+  },
+  {
+    "route": "/starting-school",
+    "brokenImages": [],
+    "forbidden": [],
+    "h1": 1,
+    "height": 5451,
+    "overflow": [],
+    "scrollWidth": 1440,
+    "title": "Starting school at Jade | Jade International School",
+    "width": 1440
+  },
+  {
+    "route": "/igcse-and-a-levels",
+    "brokenImages": [],
+    "forbidden": [],
+    "h1": 1,
+    "height": 5569,
+    "overflow": [],
+    "scrollWidth": 1440,
+    "title": "IGCSE and A Levels | Jade International School",
+    "width": 1440
+  },
+  {
+    "route": "/fast-track-a-levels",
+    "brokenImages": [],
+    "forbidden": [],
+    "h1": 1,
+    "height": 5494,
+    "overflow": [],
+    "scrollWidth": 1440,
+    "title": "Fast Track A Levels | Jade International School",
+    "width": 1440
+  },
+  {
+    "route": "/foundation",
+    "brokenImages": [],
+    "forbidden": [],
+    "h1": 1,
+    "height": 3821,
+    "overflow": [],
+    "scrollWidth": 1440,
+    "title": "NCC International Foundation Diploma | Jade International School",
+    "width": 1440
+  },
+  {
+    "route": "/school-life",
+    "brokenImages": [],
+    "forbidden": [],
+    "h1": 1,
+    "height": 5772,
+    "overflow": [],
+    "scrollWidth": 1440,
+    "title": "School life | Jade International School",
+    "width": 1440
+  },
+  {
+    "route": "/admissions",
+    "brokenImages": [],
+    "forbidden": [],
+    "h1": 1,
+    "height": 4150,
+    "scrollWidth": 1440,
+    "title": "Admissions | Jade International School",
+    "width": 1440
+  },
+  {
+    "route": "/news",
+    "brokenImages": [],
+    "forbidden": [],
+    "h1": 1,
+    "height": 3506,
+    "scrollWidth": 1440,
+    "title": "News and school stories | Jade International School",
+    "width": 1440
+  },
+  {
+    "route": "/news/graduation-2025",
+    "brokenImages": [],
+    "forbidden": [],
+    "h1": 1,
+    "height": 2660,
+    "scrollWidth": 1440,
+    "title": "Graduation and prize giving, 2025 | Jade International School",
+    "width": 1440
+  },
+  {
+    "route": "/news/learning-around-the-table",
+    "brokenImages": [],
+    "forbidden": [],
+    "h1": 1,
+    "height": 2695,
+    "scrollWidth": 1440,
+    "title": "Inside Jade’s workshop classrooms | Jade International School",
+    "width": 1440
+  },
+  {
+    "route": "/news/sport-at-jade",
+    "brokenImages": [],
+    "forbidden": [],
+    "h1": 1,
+    "height": 2695,
+    "scrollWidth": 1440,
+    "title": "Sport on the school timetable | Jade International School",
+    "width": 1440
+  },
+  {
+    "route": "/news/university-career-fair",
+    "brokenImages": [],
+    "forbidden": [],
+    "h1": 1,
+    "height": 2695,
+    "scrollWidth": 1440,
+    "title": "Conversations about university | Jade International School",
+    "width": 1440
+  },
+  {
+    "route": "/contact",
+    "brokenImages": [],
+    "forbidden": [],
+    "h1": 1,
+    "height": 2631,
+    "scrollWidth": 1440,
+    "title": "Contact Jade | Jade International School",
+    "width": 1440
+  },
+  {
+    "route": "/visit",
+    "brokenImages": [],
+    "forbidden": [],
+    "h1": 1,
+    "height": 3120,
+    "scrollWidth": 1440,
+    "title": "Book a tour | Jade International School",
+    "width": 1440
+  },
+  {
+    "route": "/",
+    "brokenImages": [],
+    "h1": 1,
+    "height": 11556,
+    "overflow": [
+      "opening-photo",
+      "editorial-image tour-round-photo",
+      ""
+    ],
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "/about",
+    "brokenImages": [],
+    "h1": 1,
+    "height": 5780,
+    "overflow": [
+      "editorial-image tour-round-photo",
+      ""
+    ],
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "/academics",
+    "brokenImages": [],
+    "h1": 1,
+    "height": 6893,
+    "overflow": [
+      "route-comparison",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "/starting-school",
+    "brokenImages": [],
+    "h1": 1,
+    "height": 7029,
+    "overflow": [
+      "editorial-image tour-round-photo",
+      ""
+    ],
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "/igcse-and-a-levels",
+    "brokenImages": [],
+    "h1": 1,
+    "height": 7149,
+    "overflow": [
+      "editorial-image tour-round-photo",
+      ""
+    ],
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "/fast-track-a-levels",
+    "brokenImages": [],
+    "h1": 1,
+    "height": 6991,
+    "overflow": [
+      "editorial-image tour-round-photo",
+      ""
+    ],
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "/foundation",
+    "brokenImages": [],
+    "h1": 1,
+    "height": 4541,
+    "overflow": [
+      "editorial-image tour-round-photo",
+      ""
+    ],
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "/school-life",
+    "brokenImages": [],
+    "h1": 1,
+    "height": 7335,
+    "overflow": [
+      "editorial-image tour-round-photo",
+      ""
+    ],
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "/admissions",
+    "brokenImages": [],
+    "h1": 1,
+    "height": 5073,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "/news",
+    "brokenImages": [],
+    "h1": 1,
+    "height": 4338,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "/news/graduation-2025",
+    "brokenImages": [],
+    "h1": 1,
+    "height": 2812,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "/news/learning-around-the-table",
+    "brokenImages": [],
+    "h1": 1,
+    "height": 2903,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "/news/sport-at-jade",
+    "brokenImages": [],
+    "h1": 1,
+    "height": 2823,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "/news/university-career-fair",
+    "brokenImages": [],
+    "h1": 1,
+    "height": 2792,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "/contact",
+    "brokenImages": [],
+    "h1": 1,
+    "height": 3185,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "route": "/visit",
+    "brokenImages": [],
+    "h1": 1,
+    "height": 3833,
+    "scrollWidth": 390,
+    "width": 390
+  }
+]

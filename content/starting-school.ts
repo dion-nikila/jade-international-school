@@ -2,7 +2,7 @@ import type {PathwayContent} from "./types";
 export const startingSchool: PathwayContent = {
   slug: "starting-school", title: "Starting school at Jade",
   description: "Explore preschool and primary entry with Jade. Tell admissions which stage you are considering and arrange a visit to the relevant section.",
-  image: {src:"/media/jade-preschool-painting.jpg",alt:"A child painting with a brush at Jade Preschool",label:"Painting at Jade Preschool."},
+  image: {src:"/media/jade-preschool-painting.jpg",alt:"A child painting with a brush at Jade Preschool",label:"Painting at Jade Preschool.",position:"50% 10%"},
   facts: [
     {label:"Stages",value:"Preschool and primary",verify:false,source:["https://jadepreschool.com/","https://www.jadeeducation.org/school-admission"]},
     {label:"Preschool location",value:"30 Asoka Gardens, Colombo 04",verify:true,source:["https://jadepreschool.com/","https://jadepreschool.com/admission"],note:"Homepage and admissions page show different addresses. Confirm before publishing."},

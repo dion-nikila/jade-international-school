@@ -1,0 +1,7 @@
+import type {Metadata} from 'next';
+import Link from 'next/link';
+import {site} from '@/content/site';
+import {photos} from '@/content/school';
+import {PageIntro,TourBanner} from '@/components/Sections';
+export const metadata:Metadata={title:'Contact Jade',description:'Contact Jade International School at 321 Galle Road, Colombo 04. Call or WhatsApp +94 77 395 4321.'};
+export default function Contact(){return <main id="main"><PageIntro title="Talk to Jade." body="For a school visit, programme questions or an admissions conversation, contact the school directly." image={photos.tables}/><section className="section page-width contact-grid"><div className="contact-list"><section><h2>Call or WhatsApp</h2><p><a href={site.telephoneHref}>{site.telephone}</a></p><p><a className="plain-link" href={site.whatsapp}>Open a WhatsApp conversation</a></p></section><section><h2>Email the school</h2><p><a href={site.emailHref}>{site.email}</a></p></section><section><h2>Visit the school</h2><address>{site.address}</address><p className="section-note">Arrange your visit in advance. Families visiting preschool should confirm the relevant section and address.</p><Link className="plain-link" href="/visit">Prepare a tour enquiry</Link></section></div><div className="contact-map"><h2>Find us in Colombo 04.</h2><p>321 Galle Road, Colombo 04, Sri Lanka</p><a className="primary-button" href="https://maps.google.com/?q=321+Galle+Road+Colombo+04" target="_blank" rel="noopener noreferrer">Open Google Maps</a></div></section><TourBanner/></main>;}

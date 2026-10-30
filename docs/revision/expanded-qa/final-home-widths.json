@@ -1,0 +1,47 @@
+[
+  {
+    "scrollWidth": 360,
+    "tabs": [
+      108,
+      108,
+      108
+    ],
+    "width": 360
+  },
+  {
+    "scrollWidth": 390,
+    "tabs": [
+      115,
+      115,
+      115
+    ],
+    "width": 390
+  },
+  {
+    "scrollWidth": 768,
+    "tabs": [
+      230,
+      230,
+      230
+    ],
+    "width": 768
+  },
+  {
+    "scrollWidth": 1024,
+    "tabs": [
+      307,
+      307,
+      307
+    ],
+    "width": 1024
+  },
+  {
+    "scrollWidth": 1440,
+    "tabs": [
+      432,
+      432,
+      432
+    ],
+    "width": 1440
+  }
+]

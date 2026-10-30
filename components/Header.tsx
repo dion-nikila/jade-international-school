@@ -35,10 +35,10 @@ export function Header() {
 
   return <header ref={ref} className="school-header" role={open ? "dialog" : undefined} aria-modal={open || undefined} aria-label={open ? site.menuLabel : undefined}>
     <div className="header-inner">
-      <Link className="school-logo" href="/" aria-label={site.homeLabel} onClick={() => setOpen(false)}><Image src={site.logo.src} width={site.logo.width} height={site.logo.height} alt={site.name} loading="eager" unoptimized/></Link>
-      <nav className="desktop-navigation" aria-label={site.navLabel}>{site.navigation.map(link => <Link href={link.href} key={link.href} aria-current={pathname===link.href ? "page" : undefined}>{link.label}</Link>)}</nav>
+      <Link className="school-logo" href="/" aria-label={site.homeLabel} onClick={() => setOpen(false)}><Image src={site.logo.src} width={site.logo.width} height={site.logo.height} alt={site.name} loading="eager" unoptimized/></Link><Link href="/" className="header-name" onClick={() => setOpen(false)}>Jade<span>International School</span></Link>
+      <nav className="desktop-navigation" aria-label={site.navLabel}>{site.navigation.map(link => <Link href={link.href} key={link.href} aria-current={pathname===link.href || pathname.startsWith(link.href+"/") ? "page" : undefined}>{link.label}</Link>)}</nav>
       <div className="header-actions"><Link className="tour-link" href={site.tour.href} onClick={() => setOpen(false)}>{site.tour.label}</Link><button ref={toggle} className="menu-button" aria-expanded={open} aria-controls="school-mobile-navigation" onClick={() => setOpen(!open)}>{open ? site.menuClose : site.menuOpen}</button></div>
     </div>
-    <nav id="school-mobile-navigation" className="mobile-navigation" aria-label={site.menuLabel} hidden={!open}>{site.navigation.map(link => <Link href={link.href} key={link.href} onClick={() => setOpen(false)}>{link.label}</Link>)}<a href={site.telephoneHref}>{site.telephone}</a></nav>
+    <nav id="school-mobile-navigation" className="mobile-navigation" aria-label={site.menuLabel} hidden={!open}>{site.navigation.map(link => <Link href={link.href} key={link.href} onClick={() => setOpen(false)}>{link.label}</Link>)}<Link href="/contact" onClick={() => setOpen(false)}>Contact</Link><a href={site.telephoneHref}>{site.telephone}</a></nav>
   </header>;
 }
