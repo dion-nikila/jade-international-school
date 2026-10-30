@@ -1,0 +1,7 @@
+:HL["/jade-international-school/_next/static/chunks/36ta1j58ci3rb.css","style"]
+:HL["/jade-international-school/_next/static/media/dm_sans_400-s.p.1ak_r0qwk4efr.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+:HL["/jade-international-school/_next/static/media/dm_sans_600-s.p.0vbbr_motsstn.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+3:[["children",{"s":"__PAGE__","h":160}]]
+2:[["children",{"s":{"n":"slug","t":"d","k":"graduation-2025","s":[]},"h":65632,"c":"$Q3"}]]
+1:[["children",{"s":"news","h":131168,"c":"$Q2"}]]
+0:{"b":"g5bmmIAeaMY4fI8IQsaiZ","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
