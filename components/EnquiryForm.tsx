@@ -3,7 +3,6 @@ import {useRef, useState, type FormEvent} from "react";
 import {enquiryContent as copy} from "@/content/enquiry";
 import {site} from "@/content/site";
 import {validateEnquiry, type Enquiry, type EnquiryErrors} from "@/lib/enquiry";
-import {Arrow} from "./Primitives";
 
 export function EnquiryForm() {
   const formRef = useRef<HTMLFormElement>(null);
@@ -44,7 +43,7 @@ export function EnquiryForm() {
       <div className="form-field form-wide"><label htmlFor="enquiry-message">{copy.labels.message}</label><textarea {...attributes("message")} rows={3} placeholder={copy.placeholders.message} maxLength={2000} required/>{error("message")}</div>
     </div>
     <div className="consent-field"><label><input {...attributes("consent")} type="checkbox" required/><span>{copy.labels.consent}</span></label>{error("consent")}</div>
-    <button type="submit" className="button-link" disabled={pending}><span>{pending ? copy.submitting : copy.submit}</span><Arrow/></button>
+    <button type="submit" className="button-link" disabled={pending}><span>{pending ? copy.submitting : copy.submit}</span></button>
     <p className="form-status" role="status" aria-live="polite">{status}</p>
     <p className="form-privacy">{site.footer.privacy}</p>
   </form>;

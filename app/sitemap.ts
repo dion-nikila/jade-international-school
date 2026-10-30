@@ -1,3 +1,4 @@
 import type {MetadataRoute} from "next";
 import {site} from "@/content/site";
-export default function sitemap(): MetadataRoute.Sitemap {return [{url: site.url, changeFrequency: "monthly", priority: 1}];}
+import {pathways} from "@/content/pathways";
+export default function sitemap(): MetadataRoute.Sitemap {return ["",...pathways.map(p=>`/${p.slug}`),"/visit"].map(path=>({url:site.url+path,changeFrequency:"monthly",priority:path ? .7 : 1}));}

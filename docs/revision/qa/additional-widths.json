@@ -1,0 +1,29 @@
+[
+  {
+    "headerFits": true,
+    "heroColour": "rgb(255, 255, 255)",
+    "heroWeight": "600",
+    "overflow": 0,
+    "photoFilter": "none",
+    "photoOpacity": "1",
+    "width": 360
+  },
+  {
+    "headerFits": true,
+    "heroColour": "rgb(255, 255, 255)",
+    "heroWeight": "600",
+    "overflow": 0,
+    "photoFilter": "none",
+    "photoOpacity": "1",
+    "width": 768
+  },
+  {
+    "headerFits": true,
+    "heroColour": "rgb(255, 255, 255)",
+    "heroWeight": "600",
+    "overflow": 0,
+    "photoFilter": "none",
+    "photoOpacity": "1",
+    "width": 1024
+  }
+]

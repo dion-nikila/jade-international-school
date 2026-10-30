@@ -1,0 +1,25 @@
+{
+  "jade-glass-classroom.jpg": {
+    "sourcePage": "https://www.jadeeducation.org/home",
+    "sourceImage": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72s9ld5-4Tg-UWw9PTaYBiWiL3It-sdZOIWjq3glslkkJe_jJXT0_CIXv6FbXTQRuaykpyAIHw4lvf2LpwB8GcwMwQ0H5JIUApCFyqFIzFFHKTiOAHVcoSp4yKRGZt7n7hLM_WiSM0lM0fpUuwaExBf9Fk0EKmgTJlkV=w16383",
+    "sha256": "461c75fec6c50e30a25eca872730744258ce2edbb7c72621cd4a754d23b947f0",
+    "treatment": "Original photograph. Cropped with object-fit; no colour adjustment."
+  },
+  "jade-round-table.jpg": {
+    "sourcePage": "https://www.jadeeducation.org/home",
+    "sourceImage": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72thAIbZlpn_RbkI7gWT0PXcQ8EfYScmneUitbnuo5NGET_-KSSuXMgowhGIKfycGnjnZfFvTYAMyn2p3g-lO0VY2U0CNQThqgf4yGxkSeAEMxLgf_c2QfnYAdnpwKaigM80u1P5sDFFaQdjUziasw9Smo7_zgoZaCS-u4E=w16383",
+    "sha256": "3325a8f7bcf2397ab7a2d4dd8e7e50bbe9da0df3f8f1e6009147755b24756d3f",
+    "treatment": "Original photograph. Cropped with object-fit; no colour adjustment."
+  },
+  "jade-classroom-tables.jpg": {
+    "sourcePage": "https://www.jadeeducation.org/home",
+    "sourceImage": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72tBLMELVzsxKVQCiW29e3VNzXIW-UU3HXK5eNlPDUCrlhmhdujP5MSuByiVwLb4C7wvwGGUWt3B3OdgRSheakIDCrA9YNYG25proqu2QweC7BbWYdp0XfxKltfJVl9sGWkjoqmYQtMf_BXEJ3tU5FSmcFdn_yNFauurPLY=w16383",
+    "sha256": "49bb92ef512a0fc952d5e00a2c651ad4ca2eb7dedaa5d91e918c1622bec0b4e3",
+    "treatment": "Original photograph. Cropped with object-fit; no colour adjustment."
+  },
+  "jade-preschool-painting.jpg": {
+    "sourcePage": "https://jadepreschool.com/",
+    "sourceImage": "https://img1.wsimg.com/isteam/ip/f45dc15c-1124-41ed-8063-b97a6cfbccb5/WhatsApp%20Image%202025-11-11%20at%2009.17.04_1c59f1e2.jpg",
+    "treatment": "Existing original school archive photograph. No colour adjustment."
+  }
+}

@@ -1,21 +1,21 @@
-# Media replacement schedule
+# Active photography and logo
 
-All current photography is **placeholder archive photography**, locally stored as WebP and visibly labelled in the prototype. It comes from Jade International School's published website; it is not stock imagery presented as the campus. Approval for final public reuse, subject consent and replacements is still required. Do not infer student identities, dates or outcomes from these photographs.
+All active images are real Jade archive photographs. There is no stock campus image or generated student photograph. School approval for final production use and pupil consent should be confirmed before launch.
 
-| Asset in `/public/media` | Current source | Intended replacement | Aspect ratio / recommended size | Format / budget |
-| --- | --- | --- | --- | --- |
-| `hero-placeholder.webp` | Official Home page science-lab image | Professionally photographed learning moment with subject on right and negative space on left; include a mobile crop | Desktop 16:9, 2400×1350; mobile 3:4, 900×1200 | WebP/AVIF, desktop ≤300KB and mobile ≤150KB |
-| `learning-placeholder.webp` | Same official lab image; temporary repeated crop | Natural participative classroom scene | 4:5, 1200×1500 | WebP/AVIF, ≤180KB |
-| `science-placeholder.webp` | Same official lab image | Wide practical-learning photograph for the school-day story | 16:9, 1600×900 | WebP/AVIF, ≤180KB |
-| `sport-placeholder.webp` | Official Sports page, in-house futsal court | Wide school sport photograph with room for mobile cropping | 16:9, 1600×900 | WebP/AVIF, ≤180KB |
-| `community-placeholder.webp` | Official Sports page, team photograph | School-life image; replace separately in outcomes with approved graduate portrait and in news with a matching graduation image | School day/news 3:2, 1500×1000; portrait 4:5, 1000×1250 | WebP/AVIF, ≤180KB each |
+| File | Source and observed content | Original size | Use |
+| --- | --- | --- | --- |
+| public/brand/jade-international-school-logo.png | Original crest PNG from Jade's official Home page | 800 × 800 | Complete unchanged source image in header and favicon |
+| public/media/jade-glass-classroom.jpg | Official Home carousel: teacher and students beside a glass writing wall and round table | 1024 × 768 | Home hero and Fast Track pathway |
+| public/media/jade-round-table.jpg | Official Home carousel: shared notes spread across a round table | 960 × 720 | IGCSE/A Level pathway |
+| public/media/jade-classroom-tables.jpg | Official Home carousel: glass-walled room with circular tables | 2016 × 1512 | Visit page |
+| public/media/jade-preschool-painting.jpg | Jade Preschool official archive: a child painting | 1080 × 963 | Starting-school entry and pathway |
 
-The current files retain their source aspect ratios and are cropped in CSS, never stretched. Next/Image serves responsive optimized sizes. Hero is preloaded; other images use default lazy loading. Source URLs are registered in `docs/media-sources.json`.
+Full image URLs and hashes are in docs/revision/MEDIA_SOURCES.json. The official logo's separate source record is in public/brand/SOURCE.json. The logo has not been recoloured, cropped, redrawn or recompressed.
 
-## Optional future hero video
+Photographs are cropped through CSS object-fit and served responsively by Next/Image. No filter, blend mode or opacity is applied to photographs. Only the Home hero has a black bottom gradient to support white text. The other photos have no overlay. Captions identify visible activities without invented year groups.
 
-The Phase 1 hero uses the image option allowed by the brief. No empty, misleading or fake video is shipped. If a real film is approved, add `hero-film.webm` (VP9) and `hero-film.mp4` (H.264), 1920×1080, 16:9, 10–15 seconds, muted, no essential text/audio, target ≤3MB. Provide the approved hero poster above. Add an accessible play/pause control, load video only after the poster/LCP and only for suitable connections, and use the still poster under reduced motion. `home.hero.video` is currently `null`; wiring real video is deliberately deferred until there is a real approved asset.
+The 1024px hero is an authentic archive image and is visibly softer on large screens. An approved replacement shoot of the same workshop setup would improve final production quality. Suggested replacement: landscape 2400 × 1600, natural colour, full circular table and glass wall visible, keep people above the caption/text area, WebP or JPEG. Do not generate or substitute an imaginary campus.
 
-## Brand and fonts
+No video is loaded. The earlier *-placeholder.webp files remain unused archive assets for the deferred Step 4 work; no current route displays them.
 
-The geometric jade mark and typographic wordmark are design proposals, not an official crest. Replace with school-approved SVG artwork before launch. `app/icon.svg` follows the same prototype direction. Local Newsreader (400/500) and DM Sans (400/600) font assets include their respective `*-OFL.txt` files.
+Active typography uses local DM Sans 400 and 600, with its Open Font License in public/fonts/.

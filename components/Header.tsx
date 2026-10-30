@@ -1,68 +1,44 @@
 "use client";
-
-import { useEffect, useRef, useState } from "react";
-import { site } from "@/content/site";
-import { Arrow, Eyebrow, JadeMark, Picture } from "./Primitives";
+import Image from "next/image";
+import Link from "next/link";
+import {useEffect, useRef, useState} from "react";
+import {usePathname} from "next/navigation";
+import {site} from "@/content/site";
 
 export function Header() {
   const [open, setOpen] = useState(false);
-  const header = useRef<HTMLElement>(null);
+  const ref = useRef<HTMLElement>(null);
   const toggle = useRef<HTMLButtonElement>(null);
-  const panel = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const onScroll = () => header.current?.classList.toggle("header-scrolled", window.scrollY > 36);
-    onScroll(); window.addEventListener("scroll", onScroll, {passive: true});
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
+  const pathname = usePathname();
   useEffect(() => {
     if (!open) return;
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
     const page = document.getElementById("page-content");
+    const overflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
     if (page) page.inert = true;
-    const links = panel.current?.querySelectorAll<HTMLElement>('a[href], button');
-    links?.[0]?.focus({preventScroll:true});
+    ref.current?.querySelector<HTMLAnchorElement>(".mobile-navigation a")?.focus();
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") { setOpen(false); toggle.current?.focus(); }
+      if (event.key === "Escape") {setOpen(false);toggle.current?.focus();}
       if (event.key === "Tab") {
-        const items = Array.from(header.current?.querySelectorAll<HTMLElement>('a[href], button') || []).filter(el => el.getClientRects().length > 0);
-        const first = items[0], last = items[items.length - 1];
-        if (event.shiftKey && document.activeElement === first) {event.preventDefault(); last?.focus();}
-        else if (!event.shiftKey && document.activeElement === last) {event.preventDefault(); first?.focus();}
+        const items = Array.from(ref.current?.querySelectorAll<HTMLElement>("a,button") || []).filter(el => el.getClientRects().length);
+        const first = items[0], last = items[items.length-1];
+        if (event.shiftKey && document.activeElement === first) {event.preventDefault();last?.focus();}
+        else if (!event.shiftKey && document.activeElement === last) {event.preventDefault();first?.focus();}
       }
     };
     window.addEventListener("keydown", onKey);
-    return () => {document.body.style.overflow = previousOverflow; if (page) page.inert = false; window.removeEventListener("keydown", onKey);};
+    const breakpoint = window.matchMedia("(min-width: 1000px)");
+    const resize = () => {if (breakpoint.matches) setOpen(false);};
+    breakpoint.addEventListener("change", resize);
+    return () => {document.body.style.overflow = overflow;if(page)page.inert=false;window.removeEventListener("keydown",onKey);breakpoint.removeEventListener("change",resize);};
   }, [open]);
 
-  function close() {setOpen(false);}
-
-  return <header ref={header} className={`site-header ${open ? "menu-is-open" : ""}`} role={open ? "dialog" : undefined} aria-modal={open || undefined} aria-label={open ? site.menuLabel : undefined}>
-    <div className="header-bar">
-      <a className="brand" href="#top" aria-label={site.homeLabel} onClick={close}>
-        <JadeMark className="brand-mark"/>
-        <span className="brand-type"><span className="brand-word">{site.wordmark}</span><span className="brand-sub">{site.submark}</span></span>
-      </a>
-      <nav className="desktop-nav" aria-label={site.navLabel}>
-        {site.navigation.slice(0, 3).map(item => <a key={item.label} href={item.href} onClick={close}>{item.label}</a>)}
-      </nav>
-      <div className="header-actions">
-        <a className="tour-button" href={site.tour.href} onClick={close}>{site.tour.label}<Arrow diagonal/></a>
-        <button ref={toggle} type="button" className="menu-toggle" aria-expanded={open} aria-controls="jade-mega-menu" aria-label={open ? site.menuClose : site.menuOpen} onClick={() => setOpen(!open)}>
-          <span className="menu-toggle-lines" aria-hidden="true"><i/><i/></span>
-        </button>
-      </div>
+  return <header ref={ref} className="school-header" role={open ? "dialog" : undefined} aria-modal={open || undefined} aria-label={open ? site.menuLabel : undefined}>
+    <div className="header-inner">
+      <Link className="school-logo" href="/" aria-label={site.homeLabel} onClick={() => setOpen(false)}><Image src={site.logo.src} width={site.logo.width} height={site.logo.height} alt={site.name} loading="eager" unoptimized/></Link>
+      <nav className="desktop-navigation" aria-label={site.navLabel}>{site.navigation.map(link => <Link href={link.href} key={link.href} aria-current={pathname===link.href ? "page" : undefined}>{link.label}</Link>)}</nav>
+      <div className="header-actions"><Link className="tour-link" href={site.tour.href} onClick={() => setOpen(false)}>{site.tour.label}</Link><button ref={toggle} className="menu-button" aria-expanded={open} aria-controls="school-mobile-navigation" onClick={() => setOpen(!open)}>{open ? site.menuClose : site.menuOpen}</button></div>
     </div>
-    <div id="jade-mega-menu" ref={panel} className="mega-menu" hidden={!open} data-lenis-prevent>
-      <div className="mega-links"><Eyebrow>{site.menuLabel}</Eyebrow>
-        <nav aria-label={site.menuLabel}>{site.navigation.map(item => <a key={item.number} href={item.href} onClick={close}>
-          <span className="menu-number">{item.number}</span><span><strong>{item.label}</strong><small>{item.description}</small></span><Arrow diagonal/>
-        </a>)}</nav>
-        <a className="menu-contact" href={site.emailHref}>{site.menu.contactLabel}<span>{site.email}</span></a>
-      </div>
-      <div className="mega-feature"><Picture media={site.menu.image}/><div><Eyebrow>{site.menu.eyebrow}</Eyebrow><h2>{site.menu.title}</h2><p>{site.menu.caption}</p></div></div>
-    </div>
+    <nav id="school-mobile-navigation" className="mobile-navigation" aria-label={site.menuLabel} hidden={!open}>{site.navigation.map(link => <Link href={link.href} key={link.href} onClick={() => setOpen(false)}>{link.label}</Link>)}<a href={site.telephoneHref}>{site.telephone}</a></nav>
   </header>;
 }

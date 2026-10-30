@@ -1,5 +1,19 @@
 export type LinkItem = { label: string; href: string };
 export type Media = { src: string; alt: string; label: string; position?: string };
+export type Fact = {label: string; value: string | null; verify: boolean; source: string[]; note?: string};
+export type EntryPoint = {title: string; description: string; href: string; linkLabel: string; image?: Media; details: Fact[]; nextStep: string};
+export type OpeningContent = {
+  meta: {title: string; description: string};
+  sections: {hero: boolean; information: boolean; startHere: boolean; restOfHome: boolean};
+  hero: {title: string; description: string; action: LinkItem; image: Media};
+  information: {label: string; facts: Fact[]};
+  startHere: {title: string; description: string; entries: EntryPoint[]};
+};
+export type PathwayContent = {
+  slug: string; title: string; description: string; image: Media; facts: Fact[];
+  sections: {title: string; body: string}[]; next: {title: string; body: string; link: LinkItem};
+  sources: LinkItem[]; sourceLabel: string;
+};
 export type Programme = { number: string; name: string; description: string; detail: string; href: string };
 export type DayChapter = { number: string; moment: string; title: string; description: string; image: Media };
 export type Statistic = { value: number | null; suffix: string; label: string; placeholder: string };
