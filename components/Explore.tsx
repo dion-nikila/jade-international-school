@@ -7,7 +7,7 @@ import {programmes,gallery,photos} from '@/content/school';
 export function Hero(){
  const slides=[photos.classroom,photos.science,photos.sport];const [active,setActive]=useState(0);
  return <section className="opening-hero" aria-labelledby="hero-title">
-  <Image key={slides[active].src} className="opening-photo" src={slides[active].src} alt={slides[active].alt} fill preload={active===0} sizes="100vw" style={{objectPosition:slides[active].position}}/>
+  <div className="hero-photo-stage"><Image key={slides[active].src} className="opening-photo" src={slides[active].src} alt={slides[active].alt} fill preload={active===0} sizes="100vw" style={{objectPosition:slides[active].position}}/></div>
   <div className="photo-legibility"/>
   <div className="page-width opening-content"><div data-opening-copy><h1 id="hero-title">Workshop-style learning at Jade.</h1><p>Cambridge and Edexcel programmes in Colombo 04. Classes around circular tables, and a school life that extends onto the court and stage.</p><Link className="primary-button" href="/visit">Book a tour</Link></div>
   <div className="hero-selector" aria-label="School photographs">{slides.map((slide,i)=><button key={slide.src} onClick={()=>setActive(i)} aria-label={`Show ${['classroom','science lab','futsal court'][i]} photograph`} aria-pressed={active===i}><Image src={slide.src} alt="" fill sizes="80px"/><span>{['Classrooms','Science','Sport'][i]}</span></button>)}</div></div><p className="hero-image-caption">{slides[active].label}</p>

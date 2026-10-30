@@ -43,7 +43,7 @@ Programme tabs support arrow keys, Home and End. Campus photographs switch on se
 
 The tour planner prepares a WhatsApp message from a programme, time preference and optional questions. The parent reviews and sends it in WhatsApp. It never claims a tour is confirmed. No personal information is collected or stored by the planner.
 
-Motion consists of a scoped GSAP opening event and responses to visitor actions. No repetitive scroll reveals, scroll hijacking or autoplay carousel. Reduced-motion preferences disable transitions and animation. DM Sans is self-hosted through next/font/local.
+Motion includes a scoped GSAP opening event, slow hero-photo depth, floating photo compositions, a curved programme-section transition, gentle introductory photo zoom and a reading-progress line. ScrollTrigger follows native scrolling, with less movement on phones. Reduced-motion preferences remove these effects. No repetitive scroll reveals, scroll hijacking or autoplay carousel. DM Sans is self-hosted through next/font/local.
 
 ## Branding and sources
 

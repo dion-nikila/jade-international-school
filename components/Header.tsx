@@ -34,6 +34,7 @@ export function Header() {
   }, [open]);
 
   return <header ref={ref} className="school-header" role={open ? "dialog" : undefined} aria-modal={open || undefined} aria-label={open ? site.menuLabel : undefined}>
+    <span className="scroll-progress" data-reading-progress aria-hidden="true"/>
     <div className="header-inner">
       <Link className="school-logo" href="/" aria-label={site.homeLabel} onClick={() => setOpen(false)}><Image src={site.logo.src} width={site.logo.width} height={site.logo.height} alt={site.name} loading="eager" unoptimized/></Link><Link href="/" className="header-name" onClick={() => setOpen(false)}>Jade<span>International School</span></Link>
       <nav className="desktop-navigation" aria-label={site.navLabel}>{site.navigation.map(link => <Link href={link.href} key={link.href} aria-current={pathname===link.href || pathname.startsWith(link.href+"/") ? "page" : undefined}>{link.label}</Link>)}</nav>

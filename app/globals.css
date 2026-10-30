@@ -2449,3 +2449,23 @@ a:hover .editorial-image img {
     border: 0;
   }
 }
+
+/* Keep movement inside existing photo frames and the native scroll flow. */
+.hero-photo-stage {
+  position: absolute;
+  inset: -5% 0;
+}
+.scroll-progress {
+  position: absolute;
+  inset: auto 0 0;
+  height: 3px;
+  background: var(--brand-green);
+  transform: scaleX(0);
+  transform-origin: left;
+  pointer-events: none;
+  z-index: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo-stage { inset: 0; }
+  .scroll-progress { display: none; }
+}
